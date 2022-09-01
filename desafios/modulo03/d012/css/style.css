@@ -21,8 +21,12 @@
 }
 
 html, body {
+    background-image: url('../imagens/fundo-cordel.png');
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
     font-family: var(--fonte1);
-    background-color: var(--co2);
+    background-color: var(--co1);
     min-height: 100vh;
 }
 
@@ -50,16 +54,31 @@ header a:hover, footer a:hover {
 }
 
 section {
+    color: var(--cor2);
     font-family: var(--fonte3);
     font-size: 3.5vw;
-    padding: 10vh 0px 10px 30px;
+    padding: 10vh 0px 10vh 30px;
     line-height: 2em;
+}
+
+section.normal {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+section.imagem {
+    background: var(--cor3);
+}
+
+section.imagem > p {
+    margin-left: 40px;
 }
 
 footer {
     text-align: center;
     color: var(--cor2);
-    margin-top: 50px;
-    padding: 40px;
+    padding: 50px;
     background-color: var(--cor3);
 }
