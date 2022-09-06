@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    .cor {
+        background-color: #868686;
+        color: white;
+    }
+
+    tr > th, td  {
+        padding: 10px;
+        border: 1px solid rgb(83, 83, 83);
+    }
+
+    td.num {
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2" class="cor" scope="col">Área</th>
+                <th rowspan="2" class="cor" scope="col">Dissiplinas</th>
+                <th colspan="2" class="cor" scope="colgroup">Notas</th>
+                <th rowspan="2" class="cor" scope="col">Medias</th>
+            </tr>
+
+            <!--NOTAS-->
+            <tr>
+                <th class="cor" scope="col">Nota 1</th>
+                <th class="cor" scope="col">Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--AREA EXATAS-->
+            <tr>
+                <th rowspan="5" scope="rowgroup">Exatas</th>
+            </tr>
+
+            <!--DISCIPLINA EXATAS-->
+            <tr>
+                <td>Matemática</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Física</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Química</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <th colspan="4" class="cor" scope="row">Mádia de Exatas</th>
+                <td class="num cor">0.0</td>
+            </tr>
+
+            <!--AREA CURSO-->
+            <tr>
+                <th rowspan="5" scope="rowgroup">Curso de T.I.</th>
+            </tr>
+
+            <!--DISCIPLINAS CURSO-->
+            <tr>
+                <td>Logica de Programação</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+            
+            <tr>
+                <td>Tecnicas de Programação</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Desenvovimento Web</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <td>Banco de Dados</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+                <td class="num">0.0</td>
+            </tr>
+
+            <tr>
+                <th colspan="4" class="cor" scope="row">Mádia de Exatas</th>
+                <td class="num cor">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
