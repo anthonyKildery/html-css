@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--
+            required: deixa o preenchimento obrigatorio;
+            minlength="5": aceita no minimo 5 caracteres;
+            maxlength="10": acita no maximo de 10 caracteres.
+        -->
+        <p>
+            <label for="idUsuarios">Usuário:</label>
+            <input type="usuario" id="idUsuarios" required minlength="5" maxlength="10">
+        </p>
+        <p>
+            <label for="idSenha">Senha:</label>
+            <input type="password" name="senha" id="idSenha" required minlength="8" maxlength="20">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
