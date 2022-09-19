@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idN1">1° Número:</label>
+            <input type="number" name="n1" id="idN1" min="0" max="50" required oninput="idSoma.innerHTML = Number(idN1.value) + Number(idN2.value)">
+        </p>
+
+        <p>
+            <label for="idN2">2° Número:</label>
+            <input type="number" name="n2" id="idN2" min="0" max="50" required oninput="idSoma.innerHTML = Number(idN1.value) + Number(idN2.value)">
+        </p>
+
+        <p>
+            <label for="idSoma">Soma:</label>
+            <output name="soma" id="idSoma">0</output>
+        </p>
+    </form>
+</body>
+</html>
